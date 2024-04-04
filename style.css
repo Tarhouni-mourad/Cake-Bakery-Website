@@ -9,8 +9,9 @@
 }
 /* navbar */
 #navbar{
-    position: fixed;
-    background-color: #431857;
+  position: fixed;
+  width: 100%;
+    background-color: #573e18;
     padding-left: 60px;
     font-weight: bold;
     z-index: 1001;
