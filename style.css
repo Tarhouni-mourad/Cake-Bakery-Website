@@ -49,6 +49,22 @@
 .icons img:hover{
     transform: translateY(-5px);
 }
+
+#carticon {
+    position: relative;
+}
+#checkoutLink {
+    /* Add any styles you want to apply */
+    margin-left: 5px; /* Adjust margin to position it properly */
+    color: rgb(35, 199, 2); /* Example color */
+    text-decoration: underline; /* Underline to indicate it's clickable */
+  }
+  
+#cartItemCount {
+    color: #02ff0f;
+    font-size: x-large;
+  }
+
 @media screen and (max-width:330px){
     #logo{
         font-size: 15px;
