@@ -677,8 +677,13 @@
                     class="btn btn-secondary"
                     title="Add to Cart"
                   >
-                    <i><img src="./image/add.png" alt="" width="30px" /></i>
-                  </button>
+ </button>
+<button type="button" class="btn btn-secondary" addToCartButton title="Add to Cart">
+                  <i><img src="./image/add.png" alt="" width="30px" /></i>
+                </button>
+                    
+                    
+                 
                 </div>
                 <img src="./image/c12.png" alt="" />
                 <div class="card-body">
@@ -885,6 +890,37 @@
         ><i><img src="./image/up-arrow.png" alt="" width="50px" /></i
       ></a>
     </div>
+
+
+    <script>
+    // Select all elements with the class addToCartButton
+    const addToCartButtons = document.querySelectorAll('.addToCartButton');
+  
+    // Add a variable to keep track of the number of items in the cart
+    let cartItemCount = 0;
+  
+    // Select the cart icon and item count span
+    const cartIcon = document.getElementById('cartIcon');
+    const cartItemCountSpan = document.getElementById('cartItemCount');
+  
+    // Loop through each button and add a click event listener
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Increase the cart item count when an item is added to the cart
+        cartItemCount++;
+        
+        // Update the cart icon
+        cartIcon.src = './image/add.png'; // Update with your cart icon image
+        
+        // Update the cart item count display
+        cartItemCountSpan.textContent = cartItemCount;
+  
+        // Display message and number of items in the cart
+        alert(`Item added to cart! Total items in cart: ${cartItemCount}`);
+      });
+    });
+  </script>
+  
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
